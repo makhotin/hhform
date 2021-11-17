@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We save your roof</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+</head>
+<body>
+    <header class="container">
+        <div class="row  justify-content-center">
+            <img src="img/HHRC_Logo_final.jpg" alt="" class="col-5 animate__animated animate__flipInY" id="logo">
+        </div>
+    </header>
+    <section id="customer">
+        <form enctype="multipart/form-data" action="hhmailer.php" method="post" id="customer_info" class="animate__animated animate__backInLeft animate__delay-0.8s">
+            
+            <fieldset class="theme container">
+                <div class="row">
+                    <p id="label" class="col-12">CHOOSE A SUBJECT FOR YOUR APPEAL:</p>
+                    <label class="col"><input type="radio" name="new_roof">  New roof</label>
+                    <label class="col"><input type="radio" name="repear_roof">  Repear roof</label>
+                    <label class="col"><input type="radio" name="gutters">  Gutters</label>
+                    <label class="col"><input type="radio" name="other">  Other</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-group container" id="message-info" >
+                <p class="row">
+                    <label class="col-12" for="m_i">MORE INFORMATION:
+                        <textarea class="form-control" name="m_i" placeholder="wright text about your problem and any qwestion"></textarea>
+                    </label>
+                    
+                    <label id="upload_btn" class = "btn btn-primary" for="img">
+                        Upload Photo
+                        <input class="form-control" type="file" name="img" id="img">
+                    </label>
+                </p>
+            </fieldset>
+
+            <fieldset class="form-group container" id="contact-info">
+                <p class="row">
+                    <label class="col-12" for="address">Address:<input class="form-control" type="text" name="address" id="address" placeholder="Example:55 Grand Avenu, Wilmington, DE 18000, USA">
+                        
+                    </label>
+                    <label class="col" for="name">Name:<input class="form-control" type="text" name="name" id="name" placeholder="Example:Alex Makhotin"></label>
+                    <label class="col" for="email">E-mail:<input class="form-control" type="email" name="email" id="email" placeholder="Example:myemail@gmail.com"></label>
+                    <label class="col" for="phone">Phone:<input class="form-control" type="text" name="phone" id="phone" placeholder="Example: 23 23 23 23"></label>
+                </p>
+            </fieldset>
+
+            <input id="submit" class="btn btn-primary" type="submit" value="Send reqwest">
+        </form>
+    </section>
+</body>
+</html>
